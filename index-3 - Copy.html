@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecturio</title>
+
+  <style>
+    *{
+      height: 100%;
+    }
+    body{
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding-top: 80px;
+    }
+    .bd{
+      /* border: solid black 1px; */
+      width: 60%;
+    }
+    .channels{
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      height: 60px;
+      padding-top: 10px;
+      font-size: x-large;
+      width: 40%;
+      justify-content: space-evenly;
+    }
+    .channels>a{
+      align-content: center;
+      vertical-align: bottom;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #6e7076;
+      font-size: large;
+      font-weight: lighter;
+    }
+    .under{
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 3px grey ;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content:space-evenly;
+      /* align-items: center; */
+      list-style: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      height: 70%;
+
+    }
+    .under>li{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px #6e7076a6 solid;
+      font-weight: lighter;
+      /* color: #6e7076; */
+      margin: 5px;
+      padding: 6px;
+
+    }
+    .under>li:hover{
+      background-color: rgba(214, 73, 73, 0.514);
+    }
+
+    @media screen and (max-width:844px) {
+      .channels{
+        width: 85%;
+      }
+      .channels>a{
+        font-size:small;
+      }
+    }
+
+    @media screen and (max-width:912px) {
+      .channels{
+        width: 75%;
+      }
+      .under>li{
+        font-size: large;
+      }
+    }
+
+    @media screen and (max-width:414px) {
+      .channels{
+        width: 95%;
+      }
+      .channels>a{
+        font-size:15px;
+      }
+      body{
+        padding-top: 20px;
+      }
+      .bd{
+        width: 90%;
+      }
+    }
+
+
+    
+    @media screen and (max-width:280px) {
+      .channels{
+        width: 100%;
+      }
+      .channels>a{
+        font-size:10px;
+      }
+      body{
+        padding-top: 20px;
+      }
+      .bd{
+        width: 90%;
+      }
+      .under>li{
+        font-size:small;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bd">
+    <div class="channels">
+	<h4>Concept Page</h4>
+    </div>
+
+    <ul class="under">
+      <li><img src="https://assets-cdn1.lecturio.de/catalog-categories/5890/5890-fc95fa5740ba01a870cfa52f671fe1e4.svg" width="35px" height="35px">
+         General Physiology and Embryology</li>
+      <li><img src="https://assets-cdn1.lecturio.de/catalog-categories/4567/4567-6562c5c1f33db6e05a082a88cddab5ea.svg" width="35px" height="35px">
+        Immunology</li>
+      <li ><img src="https://assets-cdn1.lecturio.de/catalog-categories/4563/4563-d74a214501c1c40b2c77e995082f3587.svg" width="35px" height="35px">
+        Microbiology</li>
+      <li ><img src="https://assets-cdn1.lecturio.de/catalog-categories/4562/4562-4454c95ca2b2b298057cbcb3bdcbb566.svg" width="35px" height="35px">
+        Synthesis of Nonessential Amino Acids</li>
+      <li ><img src="https://assets-cdn1.lecturio.de/catalog-categories/4554/4554-e7023ba77a45f7e84c5ee8a28dd63585.svg" width="35px" height="35px">
+        Biochemistry</li>
+      <li><img src="https://assets-cdn1.lecturio.de/catalog-categories/4561/4561-cb3ce9b06932da6faaa7fc70d5b5d2f4.svg" width="35px" height="35px">
+        Cellular and molecular Biology</li>
+    </ul>
+  </div>
+
+</body>
+</html>
